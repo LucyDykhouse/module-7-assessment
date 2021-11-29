@@ -55,3 +55,35 @@ console.log(hasUniqueChars("Moonday"));
 
 
 
+// Question 3: is panagram
+
+function isPangram(str) {
+    const alphabet = "abcdefghijklmnopqrstubwxyz";
+    const lowercase = str.toLowerCase().split('');
+    let status = false;
+
+    for (let i = 0; i < alphabet.length; i++) {
+        if (lowercase.indexOf(alphabet[i]) === -1) {
+            return status;
+        }
+    }
+
+    return status = true;
+}
+
+// Testing strings
+console.log(`\n------- isPangram -------`);
+console.log(isPangram("The quick brown fox jumps over the lazy dog!"));
+console.log(isPangram("I like cats, but not mice"));
+
+
+// Time complexity
+// O(n)
+
+// Space complexity
+// O(n)
+
+
+
+
+
