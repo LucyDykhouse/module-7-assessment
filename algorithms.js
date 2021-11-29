@@ -23,7 +23,7 @@ console.log(addToZero([1, 2, 3, -2]));
 // O(n^2)
 
 // Space complexity
-// O(n)
+// O(n^2)
 
 
 
@@ -51,7 +51,7 @@ console.log(hasUniqueChars("Moonday"));
 // O(n^2)
 
 // Space complexity
-// O(n)
+// O(n^2)
 
 
 
