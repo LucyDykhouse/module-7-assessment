@@ -1,15 +1,15 @@
 // Question 1: add to zero
 
 function addToZero(arr) {
-    let status = false;
+    let status = true;
     for (let i = 0; i < arr.length - 1; i++) {
         for (let j = i + 1; j < arr.length; j++) {
             if (arr[i] + arr[j] === 0) {
-                status = true;
+                return status;
             }
         }
     }
-    return status;
+    return status = false;
 }
 
 // Testing arrays
@@ -58,7 +58,7 @@ console.log(hasUniqueChars("Moonday"));
 // Question 3: is pangram
 
 function isPangram(str) {
-    const alphabet = "abcdefghijklmnopqrstubwxyz";
+    const alphabet = "abcdefghijklmnopqrstuvwxyz";
     const lowercase = str.toLowerCase().split('');
     let status = false;
 
