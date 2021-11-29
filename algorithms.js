@@ -55,7 +55,7 @@ console.log(hasUniqueChars("Moonday"));
 
 
 
-// Question 3: is panagram
+// Question 3: is pangram
 
 function isPangram(str) {
     const alphabet = "abcdefghijklmnopqrstubwxyz";
@@ -85,5 +85,27 @@ console.log(isPangram("I like cats, but not mice"));
 
 
 
+// Question 4: find longest word
 
+function findLongestWord(arr) {
+    let wordLength = arr[0].length;
 
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i].length > wordLength) {
+            wordLength = arr[i].length;
+        }
+    }
+
+    return wordLength;
+}
+
+// Testing arrays
+console.log(`\n------- findLongestWord -------`);
+console.log(findLongestWord(["hi", "hello"]));
+console.log(findLongestWord(['hi', 'hello', 'howareyou', 'hello']));
+
+// Time complexity
+// O(n)
+
+// Space complexity
+// O(n)
